@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tag>
+	<item>
+		<id>math</id>
+		<name>mathematics</name>
+		<shortname>math</shortname>
+		<color>#F1A899</color>
+		<bordercolor>#D17777</bordercolor>
+	</item>
+	<item>
+		<id>dynamics</id>
+		<name>dynamical systems</name>
+		<shortname>dynamics</shortname>
+		<color>#F1A899</color>
+		<bordercolor>#D17777</bordercolor>
+	</item>
+	<item>
+		<id>numerical</id>
+		<name>numerical analysis</name>
+		<shortname>numerical</shortname>
+		<color>linear-gradient(120deg, #F1A899 50%, #9ACD32 50%)</color>
+		<bordercolor>#D17777</bordercolor>
+	</item>
+	<item>
+		<id>algebra</id>
+		<name>algebra</name>
+		<color>#F1A899</color>
+		<bordercolor>#D17777</bordercolor>
+	</item>
+	<item>
+		<id>discrete</id>
+		<name>discrete mathematics</name>
+		<shortname>discrete</shortname>
+		<color>#F1A899</color>
+		<bordercolor>#D17777</bordercolor>
+	</item>
+	<item>
+		<id>probability</id>
+		<name>probability</name>
+		<color>#F1A899</color>
+		<bordercolor>#D17777</bordercolor>
+	</item>
+
+	<item>
+		<id>ee</id>
+		<name>electric engineer</name>
+		<shortname>ee</shortname>
+		<color>#F4A460</color>
+		<bordercolor>#CD853F</bordercolor>
+	</item>
+	<item>
+		<id>digital</id>
+		<name>digital circuit</name>
+		<shortname>digital</shortname>
+		<color>#F4A460</color>
+		<bordercolor>#CD853F</bordercolor>
+	</item>
+
+	<item>
+		<id>cs</id>
+		<name>computer science</name>
+		<shortname>cs</shortname>
+		<color>#9ACD32</color>
+		<bordercolor>#228B22</bordercolor>
+	</item>
+	<item>
+		<id>algorithm</id>
+		<name>algorithm</name>
+		<color>#9ACD32</color>
+		<bordercolor>#228B22</bordercolor>
+	</item>
+	<item>
+		<id>c</id>
+		<name>C++</name>
+		<color>#9ACD32</color>
+		<bordercolor>#228B22</bordercolor>
+	</item>
+
+	
+	<item>
+		<id>publication</id>
+		<name>publication</name>
+		<color>#6495ED</color>
+		<bordercolor>#00008B</bordercolor>
+	</item>
+
+
+</tag>

@@ -1,0 +1,55 @@
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|inc|bak|old|xml)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+<IfModule mod_headers.c>
+Header always set X-Frame-Options "SAMEORIGIN"
+#Header always set X-Frame-Options "ALLOW-FROM https://blackboard.stonybrook.edu"
+#Header append X-Frame-Options
+#Header set Content-Security-Policy "default-src 'self'"
+</IfModule>
+
+ErrorDocument 400 /~dsou/error.html
+ErrorDocument 401 /~dsou/error.html
+ErrorDocument 402 /~dsou/error.html
+ErrorDocument 403 /~dsou/error.html
+ErrorDocument 404 /~dsou/error.html
+ErrorDocument 405 /~dsou/error.html
+ErrorDocument 406 /~dsou/error.html
+ErrorDocument 407 /~dsou/error.html
+ErrorDocument 408 /~dsou/error.html
+ErrorDocument 409 /~dsou/error.html
+ErrorDocument 410 /~dsou/error.html
+ErrorDocument 411 /~dsou/error.html
+ErrorDocument 412 /~dsou/error.html
+ErrorDocument 413 /~dsou/error.html
+ErrorDocument 414 /~dsou/error.html
+ErrorDocument 415 /~dsou/error.html
+ErrorDocument 416 /~dsou/error.html
+ErrorDocument 417 /~dsou/error.html
+ErrorDocument 422 /~dsou/error.html
+ErrorDocument 423 /~dsou/error.html
+ErrorDocument 424 /~dsou/error.html
+ErrorDocument 426 /~dsou/error.html
+ErrorDocument 500 /~dsou/error.html
+ErrorDocument 501 /~dsou/error.html
+ErrorDocument 502 /~dsou/error.html
+ErrorDocument 503 /~dsou/error.html
+ErrorDocument 504 /~dsou/error.html
+ErrorDocument 505 /~dsou/error.html
+ErrorDocument 506 /~dsou/error.html
+ErrorDocument 507 /~dsou/error.html
+ErrorDocument 510 /~dsou/error.html
+
+# cgi mode does not work
+# suppress PHP errors from displaying in the browser
+#php_flag display_startup_errors off
+#php_flag display_errors off
+#php_flag html_errors off
+
+# log PHP errors to a file
+#php_flag log_errors on
+#php_value error_reporting 32767
+#php_value error_log error.log
+

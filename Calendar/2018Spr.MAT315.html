@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<!-- <meta http-equiv="x-frame-options" content="sameorigin"> -->
+<!-- <meta http-equiv="x-frame-options" content="blackboard.stonybrook.edu"> -->
+
+<!-- <link rel='stylesheet' href='../jquery/jquery-ui.min.css' />  -->
+
+<base href="https://www.math.stonybrook.edu/~dsou/Calendar/" target="_self" />
+
+
+<link rel='stylesheet' href='fullcalendar/fullcalendar.min.css' />
+<link rel='stylesheet' href='fullcalendar/fullcalendar.print.min.css' media='print' />
+<style>
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px;
+  }
+
+  #calendar {
+    max-width: 900px;
+    margin: 10px auto;
+  }
+
+</style>
+</head>
+<body>
+<div id='calendar'></div>
+</body>
+
+<footer>
+<script src='../jquery/jquery.min.js'></script>
+<script src='fullcalendar/lib/moment.min.js'></script>
+<script src='fullcalendar/fullcalendar.min.js'></script>
+<script type='text/javascript' src='fullcalendar/gcal.js'></script>
+
+<script>
+$(function() {
+  $('#calendar').fullCalendar({
+    googleCalendarApiKey: 'AIzaSyAJ5DKiZVMjbKWpbAACv_ucy7qivSOH6j8',
+    events: {
+      googleCalendarId: 'stonybrook.edu_fjv6ncfsr2q8v03c8nmi4g3fmg@group.calendar.google.com'
+    },
+
+    eventRender: function(event, element) {
+    	if (typeof event.description !== 'undefined') {
+            //element.find('.fc-title').append("<br/>" + event.description);
+            element.find('.fc-list-item-title').append("<br/>" + event.description.replace("\n","<br/>"));
+    	}
+    },
+
+    defaultView: 'list2Weeks',
+
+    navLinks: true, // can click day/week names to navigate views
+
+    // customize the button names,
+    // otherwise they'd all just say "list"
+    views: {
+      listDay: { buttonText: 'list day' },
+      listWeek: { buttonText: 'list' },
+      listMonth: { buttonText: 'list month' },
+      list2Weeks: { 
+   	      type: 'list',
+   	      duration: { weeks: 2 },
+   	      buttonText: 'list'
+   	    }
+    },
+
+    header: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'month,agendaWeek,list2Weeks'
+    },
+  });
+});
+
+</script>
+</footer>
+</html>

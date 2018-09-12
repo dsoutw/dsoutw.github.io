@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Copyright by Dyi-Shing Ou -->
+
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->	<title>Dyi-Shing</title>	<meta name="author" content="Dyi-Shing Ou" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<base href="/" target="_self" />
+	
+	<link rel="stylesheet" href="jquery/jquery-ui.min.css" />
+	<link rel="stylesheet" href="UI.css" />
+		
+	<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+	<!--<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">-->	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-90185890-1', 'auto');
+	  ga('send', 'pageview');
+	</script></head>
+
+<body>
+	
+<header>
+	<div id="top"><h1 id="name">Dyi-Shing Ou</h1></div>
+	<nav id="topnav">
+		<ul><li id='topnavactive'><a href=''>Home</a></li>
+<li><a href='Research/'>Research and Project</a></li>
+<li><a href='Teaching/'>Teaching</a></li>
+<li><a href='Resource/'>Resource</a></li>
+<li style='float:right'><a href='About/'>About</a></li>
+		</ul>
+	</nav><!-- Popup for google map -->
+<link rel="stylesheet" href="jquery/magnific-popup.css" />
+<style>
+#map {
+    /*margin: auto;
+    display: block;*/
+    /*width: 80%;*/
+    /*max-width: 700px;*/
+	position: relative;
+	background: transparent;
+	/*padding: 20px;*/
+	/*width: auto;*/
+	width:600px;
+	width:80vw;
+	height:400px;
+	height:80vh;
+	max-width: 600px;
+	/*margin: 20px auto;*/
+	margin:0 auto;
+	text-align: center;
+	float:center;
+	min-width : 320px;
+	min-height : 320px;
+}
+
+@media only screen and (max-width: 450px) {
+    #map {
+        width:100%;
+        padding:2em 0em;
+    }
+}
+@media only screen and (max-height: 450px) {
+    #map {
+        height:100vh;
+        padding:0em 2em;
+    }
+}
+</style>
+</header>
+
+<main>
+	<div id="contact">
+		<p>Office: <a href="https://goo.gl/maps/3QQiD7CfSuP2" data-mfp-src="#map" class="popup-link">Math tower</a> 3-118</p>
+		<p>Office Hour: (subject to change)
+		<ul>
+			<li>Mon 8pm-9pm at Math Tower 3-118</li>
+			<li>Tue 5pm-6pm at <a href="http://math.stonybrook.edu/mlc/">MLC</a></li>
+			<li>Fri 9am-10am at Math Tower 3-118</li>
+		</ul>
+		</p>
+		<p>Email: <img src="rand.jpg" alt="email" /></p>
+	</div>
+
+	<div id="map" class="mfp-hide">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d753.748840231038!2d-73.1260933!3d40.9158476!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xecd5ba851e702260!2sMathematics+Department!5e0!3m2!1szh-TW!2sus!4v1484086850079" 
+			width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen></iframe>
+	</div>
+
+	<div id="quicklink">
+		<h2>Popular Resources</h2>
+		<p><a href="http://www.math.stonybrook.edu/~mmovshev/mat131-fall17/index.php">MAT131 Calculus I course webpage</a></p>
+		<p><a href="http://math.stonybrook.edu/~dsou/Research/WanderingTalkCUNY.pdf">Slides for Nonexistence of Wandering Domains for Infinite Renormalizable Hénon Maps</a> (Updated: May 17, 2017)</p>
+		<p>Preprint: Nonexistence of Wandering Domains for Infinite Renormalizable Hénon Maps <a href="https://arxiv.org/abs/1705.05036">arXiv:1705.05036</a></p>
+	</div>
+</main>
+
+<footer>
+	<p>
+		Last updated: <time datetime="2017-12-06 15:40">December 06 2017 15:40</time>
+	</p>
+	<p>
+		&copy; Copyright by Dyi-Shing Ou 
+	</p>
+	<script src="UI.js"></script>
+<!-- Popup for google map -->
+<script src="jquery/jquery.min.js"></script>
+<script src="jquery/jquery.magnific-popup.min.js"></script>
+<script>
+$('.popup-link').magnificPopup({
+	type:'inline',
+	closeBtnInside: false,
+	midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
+</script>
+</footer>
+
+</body>
+</html>

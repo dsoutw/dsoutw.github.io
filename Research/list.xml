@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<research>
+	<item active="true">
+		<id>HenonWandering</id>
+		<name>Nonexistence of Wandering Domains for Infinitely Renormalizable Hénon Maps</name>
+		<time>2015 - present</time>
+		<tag>math</tag>
+		<tag>dynamics</tag>
+		<tag>publication</tag>
+		<abstract>Nonexistence of wandering domains for strongly dissipative infinitely renormalizable Hénon-like maps of period doubling type is proved in this project. The result answers an open question asked by several authors [van Strien (2010) and Lyubich (2011)] and produces a positive answer for the absences of wandering domains which is still widely open in higher dimension. Phenomena in dimension two occur in the model and produce both obstruction and solution toward the proof.</abstract>
+		<abstract>The theorem also helps to understand the topological structure of the homoclinic web for such kind of maps: the union of the stable manifolds for all periodic points is dense.</abstract>
+		<resource>Preprint: <a href="https://arxiv.org/abs/1705.05036">arXiv:1705.05036</a> <small>(Submitted for publication: Dec. 2016)</small></resource>
+		<resource><a href="http://math.stonybrook.edu/~dsou/Research/WanderingTalkCUNY.pdf">Slides for the talk at CUNY</a> <small>(May 17 2017)</small></resource>
+		<resource><a href="http://math.stonybrook.edu/~dsou/Research/WanderingTalkSBU.pdf">Slides for Dynamics Seminar at Stony Brook University</a> <small>(Oct. 23 2016)</small></resource>
+		<resource>Computer software: <a href="Renormalization">Renormalization Plot</a>, a program that can renormalize a map and plot the map's topology</resource>
+	</item>
+	
+	<item>
+		<id>Conjugacy</id>
+		<name>Conjugacy of One Dimensional Maps</name>
+		<time>2008 - 2009</time>
+		<tag>math</tag>
+		<tag>dynamics</tag>
+		<tag>numerical</tag>
+		<tag>publication</tag>
+		<abstract>A continuous map $f:[0,1]\rightarrow[0,1]$ is called an $n$-modal map if there is a partition $P=\{0=z_{0}&lt;z_{1}&lt;...&lt;z_{n}=1\}$ such that $f(z_{2i})=0$, $f(z_{2i+1})=1$ and, $f$ is monotone on each $[z_{i},z_{i+1}]$. It was proved by Milnor and Thurston (1977) that there exists a topological semi-conjugacy from a piecewise strictly monotone map to a piecewise linear map.</abstract>
+		<abstract>In this article, we give a method for constructing the topological semi-conjugacy numerically which extends the results from Fotiades, Boudourides (2001) and Banks, Dragan, Jones (2003). In addition, the uniqueness of the semi-conjugacy, is proved by this method. The convergence rate is discussed for the approximation method also. Moreover, in contrast to Fotiades and Banks who only consider condition which ensure the conjugacy map exists, here we state equivalent conditions for the semi-conjugacy to be exactly a bijection, which coincide with Parry's (1966) result. Finally, two applications are given. In one, we study the trajectory of the invariant Cantor set for the logistic map $l_{\mu}(x)=\mu x(1-x)$ when the parameter $\mu\geq4$. In the other, we construct an invariant measure for an $n$-modal map.</abstract>
+		<resource>Ou and K. Palmer, A Constructive Proof of the Existence of a Semi-Conjugacy for a One Dimensional Map, Discrete and Continuous Dynamical System-B 17 (2012), no. 3, 977-992 DOI:<a href="http://dx.doi.org/10.3934/dcdsb.2012.17.977">10.3934/dcdsb.2012.17.977</a></resource>
+		<resource><a href="http://handle.ncl.edu.tw/11296/ndltd/45383884152937937058">NTU Thesis</a></resource>
+		<resource><a href="http://math.stonybrook.edu/~dsou/Research/ConjugacyTalkNCTS.pdf">Slides for NCTS Workshop on Dynamical Systems</a> (May. 22 2009)</resource>
+	</item>
+	
+	<item>
+		<id>Ghost</id>
+		<name>The Analysis of Ghost Leg Game (鬼腳圖的分析)</name>
+		<time>2003-2004</time>
+		<tag>math</tag>
+		<tag>algebra</tag>
+		<tag>discrete</tag>
+		<tag>probability</tag>
+		<tag>publication</tag>
+		<abstract>Mathematical model is constructed to analyze the Ghost Leg Game.</abstract>
+		<resource><a href="http://web.math.sinica.edu.tw/math_media/d293/29306.pdf">Ou, (Chinese) 鬼腳圖的分析, 數學傳播 29 (2005), no. 3, 37-48</a></resource>
+		<resource><a href="http://math.stonybrook.edu/~dsou/Research/GhostLeg.pdf">English draft written in 2003</a></resource>
+	</item>
+
+	<item>
+		<id>Calculator</id>
+		<name>Two Digit Calculator</name>
+		<time>2004</time>
+		<tag>ee</tag>
+		<tag>digital</tag>
+		<abstract>
+			A two digit calculator with addition and substraction function.
+		</abstract>
+		<abstract>
+			The calculator was designed by 7400 series digital logic integrated circuits.
+			Simulation was done by Quartus II.
+		</abstract>
+		<screenshot>
+			<image>http://math.stonybrook.edu/~dsou/Research/Calc1.jpg</image>
+			<description>Front side of the calculator</description>
+		</screenshot>
+		<screenshot>
+			<image>http://math.stonybrook.edu/~dsou/Research/Calc2.jpg</image>
+			<description>Back side of the calculator</description>
+		</screenshot>
+		<screenshot>
+			<image>http://math.stonybrook.edu/~dsou/Research/Calc3.png</image>
+			<description>Design of the calculator</description>
+		</screenshot>
+		<screenshot>
+			<image>http://math.stonybrook.edu/~dsou/Research/Calc4.png</image>
+			<description>Simulation</description>
+		</screenshot>
+	</item>
+
+	<item>
+		<id>Mine</id>
+		<name>Minesweeper Automatic Solver</name>
+		<time>2002</time>
+		<tag>cs</tag>
+		<tag>algorithm</tag>
+		<tag>c</tag>
+		<abstract>Automatically detects mines and solve the game Minesweeper.</abstract>
+		<abstract>This was a group work. My role was to write the minesweeper program and impliment the mine search and game solving algorithm.</abstract>
+		<screenshot>
+			<image>http://math.stonybrook.edu/~dsou/Research/Mine1.jpg</image>
+			<description>Game interface</description>
+		</screenshot>
+		<screenshot>
+			<image>http://math.stonybrook.edu/~dsou/Research/Mine2.jpg</image>
+			<description>Ability to mark the mines and solve the game</description>
+		</screenshot>
+	</item>
+
+	<item>
+		<id>TextEditor</id>
+		<name>Text User Interface Text Editor</name>
+		<time>2001</time>
+		<tag>cs</tag>
+		<tag>c</tag>
+		<abstract>A text mode editor written by C++.</abstract>
+		<screenshot>
+			<image>http://math.stonybrook.edu/~dsou/Research/TextEditor1.png</image>
+			<description>Open File</description>
+		</screenshot>
+		<screenshot>
+			<image>http://math.stonybrook.edu/~dsou/Research/TextEditor2.png</image>
+			<description>Editing File</description>
+		</screenshot>
+		<screenshot>
+			<image>http://math.stonybrook.edu/~dsou/Research/TextEditor3.png</image>
+			<description>Multiple Pages</description>
+		</screenshot>
+		<screenshot>
+			<image>http://math.stonybrook.edu/~dsou/Research/TextEditor4.png</image>
+			<description>Leaving the Program</description>
+		</screenshot>
+	</item>
+</research>

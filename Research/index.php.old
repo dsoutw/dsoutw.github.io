@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php
+require("../UI.inc");
+?>
+
+<?php print_head("Research and Project", "List of researchs and projects", "");?>
+
+<body>
+	
+<?php print_header();?>
+
+<main>
+<div>
+	<h2>Research and Project</h2>
+
+<?php
+error_reporting(-1);
+ini_set('display_errors', 'On');
+phpinfo();
+try{
+	echo "open<br>";
+	$ResearchDB = new SQLite3("list.db");
+	echo "query<br>";
+	$query = $ResearchDB->query("SELECT id, title, time FROM research"); 
+	echo "read<br>";
+	while($data = $query->fetchArray())
+	{
+		echo <<<EOT
+<section>
+	<h3>{$data['title']}</h3>
+	<p>{$data['time']}</p>
+</section>
+EOT;
+	}
+}
+catch(Exception $e) {
+    echo "Error: " . $e->getMessage();
+}
+/*
+phpinfo();
+try {
+	$ResearchDB = new PDO("sqlite:list.db");
+    $ResearchDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $query = $ResearchDB->prepare("SELECT id, title, time FROM research"); 
+    $query->execute();
+	while($data = $query->fetch(PDO::FETCH_ASSOC))
+	{
+		echo <<<EOT
+	<section>
+		<h3>{$data['title']}</h3>
+		<p>{$data['time']}</p>
+	</section>
+EOT;
+	}
+}
+catch(PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
+$ResearchDB = null;
+*/
+?>
+
+	<section>
+		<h3>MAT303 Calculus IV with Applications (TA:R02,R20)</h3>
+		<p>Upper division course</p>
+	</section>
+
+
+</div>
+</main>
+
+<?php print_footer();?>
+
+</body>
+</html>
